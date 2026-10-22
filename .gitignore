@@ -7,6 +7,7 @@ __pycache__/
 build/
 dist/
 *.spec
+全能连点器.exe
 
 # 编辑器
 .vscode/
