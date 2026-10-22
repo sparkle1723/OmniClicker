@@ -58,7 +58,7 @@
 
 ### 1. 环境准备
 
-> 使用 `全能连点器.exe` **无需任何环境**；仅当从源码运行时才需要：
+> 使用 `OmniClicker-v2.0.exe` **无需任何环境**；仅当从源码运行时才需要：
 
 ```bash
 # 克隆 / 下载项目后，安装唯一第三方依赖
@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 | 方式 | 操作 | 适用场景 |
 |------|------|----------|
-| 双击 exe | 双击 **`全能连点器.exe`** | 日常使用（推荐，无需 Python 环境） |
+| 双击 exe | 双击 **`OmniClicker-v2.0.exe`** | 日常使用（推荐，无需 Python 环境） |
 | 一键启动 | 双击 `启动连点器.bat` | 从源码运行（需已安装依赖） |
 | 命令行 | `python main.py` | 开发调试（终端窗口会自动隐藏） |
 
@@ -218,7 +218,7 @@ f1 ~ f12
 
 ```
 连点器/
-├── 全能连点器.exe      # 单文件可执行程序（双击即用，免 Python 环境）
+├── OmniClicker-v2.0.exe # 单文件可执行程序（双击即用，免 Python 环境，也可从 Releases 下载）
 ├── main.py            # 主程序 v2.0（单文件架构，约 1700 行）
 ├── 启动连点器.bat      # 从源码启动的快捷入口（pythonw，无终端）
 ├── 配置文件.json       # 实战示例脚本
@@ -233,8 +233,8 @@ f1 ~ f12
 
 ```bash
 pip install pyinstaller
-python -m PyInstaller --noconfirm --onefile --noconsole --name 全能连点器 main.py
-# 产物在 dist/全能连点器.exe，移动到项目根目录即可分发
+python -m PyInstaller --noconfirm --onefile --noconsole --name OmniClicker-v2.0 main.py
+# 产物在 dist/OmniClicker-v2.0.exe，版本号随发布更新，移动到项目根目录即可分发
 ```
 
 ---
