@@ -1,0 +1,56 @@
+{
+    "loop_count": 85,
+    "actions": [
+        {
+            "type": "key",
+            "key": "f",
+            "duration": 0.15
+        },
+        {
+            "type": "delay",
+            "seconds": 1.5
+        },
+        {
+            "type": "mouse",
+            "x": 214,
+            "y": 1015,
+            "btn": "Left",
+            "duration": 0.15
+        },
+        {
+            "type": "delay",
+            "seconds": 1.5
+        },
+        {
+            "type": "mouse",
+            "x": 2392,
+            "y": 1414,
+            "btn": "Left"
+        },
+        {
+            "type": "delay",
+            "seconds": 52.0
+        },
+        {
+            "type": "mouse",
+            "x": 37,
+            "y": 39,
+            "btn": "Left"
+        },
+        {
+            "type": "delay",
+            "seconds": 1.5
+        },
+        {
+            "type": "mouse",
+            "x": 1626,
+            "y": 1194,
+            "btn": "Left",
+            "duration": 0.05
+        },
+        {
+            "type": "delay",
+            "seconds": 1.5
+        }
+    ]
+}

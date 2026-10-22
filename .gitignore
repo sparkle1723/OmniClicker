@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# PyInstaller 构建产物
+build/
+dist/
+*.spec
+
+# 编辑器
+.vscode/
+
+# 运行时自动生成的个人数据（偏好、会话存档、调试日志），不入库
+settings.json
+last_session.json
+key_debug.log
