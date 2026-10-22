@@ -7,6 +7,12 @@
 
 ---
 
+## 📥 下载
+
+免环境直接使用：前往 **[Releases 页面](https://github.com/sparkle1723/OmniClicker/releases)** 下载最新版的 `OmniClicker-v2.0.exe`，保存到任意文件夹，**双击即可运行**（无需安装 Python，单文件自包含）。
+
+> 首次启动会弹出 UAC 提权请求，点「是」后以管理员模式运行（游戏场景必需）；点「否」也能正常启动，仅对需要高权限的窗口失效。
+
 ## ✨ 功能亮点
 
 ### 🎮 双通道物理模拟（游戏物理模式）
@@ -58,7 +64,7 @@
 
 ### 1. 环境准备
 
-> 使用 `OmniClicker-v2.0.exe` **无需任何环境**；仅当从源码运行时才需要：
+> 使用 `OmniClicker-v2.0.exe`（[Releases 下载](https://github.com/sparkle1723/OmniClicker/releases)）**无需任何环境**；仅当从源码运行时才需要：
 
 ```bash
 # 克隆 / 下载项目后，安装唯一第三方依赖
@@ -69,7 +75,7 @@ pip install -r requirements.txt
 
 | 方式 | 操作 | 适用场景 |
 |------|------|----------|
-| 双击 exe | 双击 **`OmniClicker-v2.0.exe`** | 日常使用（推荐，无需 Python 环境） |
+| 双击 exe | 从 [Releases](https://github.com/sparkle1723/OmniClicker/releases) 下载 `OmniClicker-v2.0.exe` 双击 | 日常使用（推荐，无需 Python 环境） |
 | 一键启动 | 双击 `启动连点器.bat` | 从源码运行（需已安装依赖） |
 | 命令行 | `python main.py` | 开发调试（终端窗口会自动隐藏） |
 
@@ -217,17 +223,16 @@ f1 ~ f12
 ## 📁 项目结构
 
 ```
-连点器/
-├── OmniClicker-v2.0.exe # 单文件可执行程序（双击即用，免 Python 环境，也可从 Releases 下载）
+OmniClicker/
 ├── main.py            # 主程序 v2.0（单文件架构，约 1700 行）
-├── 启动连点器.bat      # 从源码启动的快捷入口（pythonw，无终端）
-├── 配置文件.json       # 实战示例脚本
-├── settings.json      # 用户偏好（自动生成：游戏模式/悬浮窗开关）
-├── last_session.json  # 动作序列自动存档（自动生成：启动时自动恢复）
-├── key_debug.log      # 运行时调试日志（自动生成）
+├── README.md          # 项目说明文档
 ├── requirements.txt   # Python 依赖（仅源码运行需要）
-└── README.md
+├── .gitignore         # 版本控制忽略规则
+├── 启动连点器.bat      # 从源码启动的快捷入口（pythonw，无终端）
+└── 配置文件.json       # 实战示例脚本
 ```
+
+> 预编译的可执行程序 `OmniClicker-vX.Y.exe` 统一在 **Releases** 发布，不随源码仓库分发；运行后会在程序目录自动生成 `settings.json`（偏好）、`last_session.json`（会话存档）、`key_debug.log`（调试日志）。
 
 ### 从源码构建 exe
 
