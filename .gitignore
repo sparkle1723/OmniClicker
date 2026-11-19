@@ -16,3 +16,6 @@ OmniClicker*.exe
 settings.json
 last_session.json
 key_debug.log
+# 个人网站配置（含个人账号信息），不入库
+学习通.json
+*.local.json
